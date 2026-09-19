@@ -1,0 +1,19 @@
+class Locker {
+    private String combination;
+    private final int lockerNumber;
+
+    public Locker(int lockerNumber, String combination) {
+        this.lockerNumber = lockerNumber;
+        this.combination = combination;
+    }
+
+    public void changeCode(String currentCode, String newCode) {
+        if (combination.equals(currentCode)) {
+            combination = newCode;
+        }
+    }
+
+    public int getLockerNumber() {
+        return lockerNumber;
+    }
+}
